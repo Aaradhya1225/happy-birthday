@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 20th Birthday! 🎉</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page 1: Entry Page -->
+    <div id="page1" class="page active">
+        <div class="balloon balloon1">🎈</div>
+        <div class="balloon balloon2">🎈</div>
+        <div class="balloon balloon3">🎈</div>
+        <div class="balloon balloon4">🎈</div>
+        <div class="balloon balloon5">🎈</div>
+        
+        <div class="stars">
+            <div class="star">✨</div>
+            <div class="star">✨</div>
+            <div class="star">✨</div>
+            <div class="star">✨</div>
+            <div class="star">✨</div>
+            <div class="star">✨</div>
+        </div>
+        
+        <div class="content-center">
+            <h1 class="main-title fade-in">Happy Birthday!</h1>
+            <button id="openBtn" class="btn-primary pulse">Open It 🎁</button>
+        </div>
+        
+        <div class="confetti" id="confetti1"></div>
+    </div>
+
+    <!-- Page 2: Countdown & Cake Page -->
+    <div id="page2" class="page">
+        <div class="balloon balloon1">🎈</div>
+        <div class="balloon balloon2">🎈</div>
+        <div class="balloon balloon3">🎈</div>
+        
+        <div class="content-center">
+            <div id="countdownContainer" class="countdown-container">
+                <h2 class="countdown-title">Get Ready! 🎉</h2>
+                <div id="countdownNumber" class="countdown-number">20</div>
+            </div>
+            
+            <div id="cakeContainer" class="cake-container hidden">
+                <h2 class="wish-text">Make a wish! 💫</h2>
+                <div class="cake" id="cake">
+                    <div class="candles">
+                        <div class="candle"><div class="flame">🔥</div></div>
+                        <div class="candle"><div class="flame">🔥</div></div>
+                        <div class="candle"><div class="flame">🔥</div></div>
+                        <div class="candle"><div class="flame">🔥</div></div>
+                        <div class="candle"><div class="flame">🔥</div></div>
+                    </div>
+                    <div class="cake-layer layer1"></div>
+                    <div class="cake-layer layer2"></div>
+                    <div class="cake-layer layer3"></div>
+                </div>
+                <p class="cake-instruction">Click the cake to blow out the candles! 🎂</p>
+            </div>
+            
+            <div id="celebrationText" class="celebration-text hidden">🎊 Yay! 🎊</div>
+        </div>
+    </div>
+
+    <!-- Page 3: Message & PDF Page -->
+    <div id="page3" class="page">
+        <div class="hearts">
+            <div class="heart">💖</div>
+            <div class="heart">💗</div>
+            <div class="heart">💕</div>
+            <div class="heart">💓</div>
+            <div class="heart">💝</div>
+        </div>
+        
+        <div class="balloon balloon1">🎈</div>
+        <div class="balloon balloon2">🎈</div>
+        
+        <div class="content-center">
+            <h1 class="love-message fade-in">I Love You! ❤️</h1>
+            <h2 class="birthday-heading fade-in">Happy Birthday, My Love!</h2>
+            
+            <div class="pdf-card fade-in">
+                <div class="sparkle">✨</div>
+                <p class="special-text">I made something special for you...</p>
+                
+                <div class="button-group">
+                    <!-- Replace '#' with your actual PDF URL -->
+                    <a href="#" target="_blank" class="btn-primary" id="openPdfBtn">
+                        📖 Open the PDF
+                    </a>
+                    <!-- Replace '#' with your actual PDF URL for download -->
+                    <a href="#" download class="btn-secondary" id="downloadPdfBtn">
+                        📥 Download It
+                    </a>
+                </div>
+                
+                <p class="note">💌 With all my love 💌</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
